@@ -1,0 +1,146 @@
+body {
+  background-color: #999999;
+  font-family: Montserrat, Rubik, sans-serif;
+  text-align: center;
+  margin: auto;
+  max-width: 768px;
+}
+.header {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header-circle {
+  background: #db5220;
+  border-radius: 50%;
+  width:45px;
+  height:45px;
+  margin-right: 10px;
+}
+.header-text {
+  color: #fff;
+}
+.header-text-main {
+  font-size: 33px;
+  display: flex;
+  justify-content: flex-start;
+}
+.header-text-description {
+  font-size: 12px;
+  display: flex;
+  justify-content: flex-start;
+}
+.header-sign {
+  font-size: 12px;
+}
+.caption {
+  color: #fff;
+  font-size: 50px;
+  font-weight: lighter;
+}
+.test, .next {
+  margin: 20px 20px;
+}
+.test-text {
+  color: #e5e5e5;
+
+}
+.img-car {
+  margin: 30px;
+}
+.table-test{
+  margin-top: 40px;
+  margin: auto;
+  color: #fff;
+  border-collapse: collapse;
+  text-align: left;
+}
+tr {
+  height: 30px;
+}
+td {
+  border-top: 1px solid #ccc9c9;
+  padding: 0 10%;
+}
+th {
+  background-color:#ccc9c9;
+  padding: 0 10%;
+}
+.next {
+  margin-top: 40px;
+}
+.next-text2 {
+  color: #e5e5e5;
+  text-align: left;
+
+}
+.next-main {
+}
+.img {
+  width: 250px;
+  height:100px;
+  padding: 3px 20px 10px 20px;
+}
+.next-button {
+  margin: 40px 0;
+}
+.btn {
+  cursor: pointer;
+  padding: 10px 50px;
+  font-size: 22px;
+  color: #fff;
+  background-color: #fd8513;
+  border-radius: 8px;
+}
+
+@media only screen and (max-width: 480px) {
+  .img {
+
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+  body {
+    width:100%;
+  }
+  .header {
+    margin-top: 30px;
+  }
+  .test-text, .next-text2 {
+    font-size: 16px;
+  }
+  td, th {
+    font-size: 16px;
+  }
+  .table-test {
+    width: 80%;
+  }
+  .img {
+    float: left;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1780px) {
+  body {
+    width:70%;
+  }
+  .header {
+    margin-top: 40px;
+  }
+  .test-text, .next-text2 {
+    font-size: 18px;
+  }
+  td, th {
+    font-size: 18px;
+  }
+  .table-test {
+    width: 60%;
+  }
+  .img {
+    float: left;
+  }
+
+}
+/*1024
+768
+480*/
