@@ -1,0 +1,19 @@
+{
+  "name": "iqoptions",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "styles": "postcss src/style.css -o public/style.css",
+    "styles:dev": "postcss src/style.css -o public/style.css -w",
+    "dev": "node ./browser-sync.js & npm run styles:dev"
+  },
+  "author": "Annie",
+  "license": "MIT",
+  "dependencies": {
+    "browser-sync": "^2.18.12",
+    "cssnano": "^3.10.0",
+    "postcss-cli": "^4.1.0",
+    "postcss-cssnext": "^2.11.0"
+  }
+}
