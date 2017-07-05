@@ -1,11 +1,13 @@
 body {
   background-color: #999999;
-  font-family: Montserrat, Rubik, sans-serif;
+}
+.container {
+  font-family: Helvetica Neue, Helvetica, sans-serif;
   text-align: center;
   margin: auto;
   max-width: 768px;
 }
-.header {
+header {
   margin-top: 40px;
   display: flex;
   justify-content: center;
@@ -34,22 +36,22 @@ body {
 .header-sign {
   font-size: 12px;
 }
-.caption {
+.test-caption, .next-caption {
+  font-family: Montserrat, Rubik, sans-serif;
   color: #fff;
-  font-size: 50px;
   font-weight: lighter;
 }
 .test, .next {
   margin: 20px 20px;
 }
-.test-text {
+.test-text, .next-text1 {
   color: #e5e5e5;
 
 }
-.img-car {
+.test-img {
   margin: 30px;
 }
-.table-test{
+.test-table {
   margin-top: 40px;
   margin: auto;
   color: #fff;
@@ -77,67 +79,123 @@ th {
 }
 .next-main {
 }
-.img {
-  width: 250px;
-  height:100px;
-  padding: 3px 20px 10px 20px;
-}
+
 .next-button {
   margin: 40px 0;
 }
 .btn {
   cursor: pointer;
-  padding: 10px 50px;
-  font-size: 22px;
   color: #fff;
   background-color: #fd8513;
   border-radius: 8px;
 }
 
-@media only screen and (max-width: 480px) {
-  .img {
-
+@media only screen and (max-width: 320px) {
+  .container {
+    min-width: 320px;
+  }
+  .img-car {
+    width: 180px;
+  }
+  .test-text, .next-text1, .next-text2 {
+    font-size: 15px;
+  }
+  .test-caption, .next-caption {
+    font-size: 35px;
+  }
+  .img-laptop {
+    width: 250px;
+  }
+  .btn {
+    padding: 10px 30px;
+    font-size: 20px;
   }
 }
 
-@media only screen and (min-width: 480px) and (max-width: 768px) {
-  body {
-    width:100%;
+@media only screen and (min-width: 321px) and (max-width: 568px) {
+  .img-laptop {
+    width: 250px;
   }
-  .header {
+  .test-caption, .next-caption {
+    font-size: 45px;
+  }
+  .img-car {
+    width: 210px;
+  }
+  .test-text, .next-text1, .next-text2 {
+    font-size: 15px;
+  }
+  .btn {
+    padding: 10px 30px;
+    font-size: 20px;
+  }
+
+}
+
+@media only screen and (min-width: 569px) and (max-width: 768px) {
+  .container {
+    width: Calc(100%-30px);
+  }
+  header {
     margin-top: 30px;
   }
-  .test-text, .next-text2 {
+  .test-text, .next-text1, .next-text2 {
     font-size: 16px;
   }
   td, th {
     font-size: 16px;
   }
-  .table-test {
+  .test-table {
     width: 80%;
   }
-  .img {
+  .img-laptop {
     float: left;
+    padding: 3px 20px 10px 20px;
+    width: 250px;
+    height:100px;
+  }
+  .test-caption, .next-caption {
+    font-size: 47px;
+  }
+  .img-car {
+    width: 220px;
+  }
+  .btn {
+    padding: 10px 50px;
+    font-size: 22px;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 1780px) {
-  body {
+@media only screen and (min-width: 769px) and (max-width: 1780px) {
+  .container {
     width:70%;
   }
-  .header {
+  header {
     margin-top: 40px;
   }
-  .test-text, .next-text2 {
+  .test-text, .next-text1, .next-text2 {
     font-size: 18px;
   }
   td, th {
     font-size: 18px;
   }
-  .table-test {
+  .test-table {
     width: 60%;
   }
-  .img {
+  .img-laptop {
     float: left;
+    padding: 3px 20px 10px 20px;
+    width: 250px;
+    height:100px;
+  }
+  .test-caption, .next-caption {
+    font-size: 50px;
+  }
+  .img-car {
+    width: 225px;
+  }
+  .btn {
+    padding: 10px 50px;
+    font-size: 22px;
   }
 
 }
