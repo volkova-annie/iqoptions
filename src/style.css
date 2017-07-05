@@ -1,5 +1,5 @@
 body {
-  background-color: #999999;
+  background-color: #061243;
 }
 .container {
   font-family: Helvetica Neue, Helvetica, sans-serif;
@@ -14,14 +14,34 @@ header {
   align-items: center;
 }
 .header-circle {
-  background: #db5220;
+  background: #f26722;
   border-radius: 50%;
   width:45px;
   height:45px;
   margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+
+}
+.cirlse-sm, .cirlse-md, .cirlse-lg {
+  color: #fffefc;
+  font-weight: bold;
+  position: relative;
+  top: 5px;
+  letter-spacing:2px;
+}
+.cirlse-sm {
+  font-size: 18px;
+}
+.cirlse-md {
+  font-size: 22px;
+}
+.cirlse-lg {
+  font-size: 26px;
 }
 .header-text {
-  color: #fff;
+  color: #fffefc;
 }
 .header-text-main {
   font-size: 33px;
@@ -38,14 +58,14 @@ header {
 }
 .test-caption, .next-caption {
   font-family: Montserrat, Rubik, sans-serif;
-  color: #fff;
+  color: #fffefc;
   font-weight: lighter;
 }
 .test, .next {
   margin: 20px 20px;
 }
 .test-text, .next-text1 {
-  color: #e5e5e5;
+  color: #4e5c9c;
 
 }
 .test-img {
@@ -54,7 +74,7 @@ header {
 .test-table {
   margin-top: 40px;
   margin: auto;
-  color: #fff;
+  color: #fffefc;
   border-collapse: collapse;
   text-align: left;
 }
@@ -62,11 +82,11 @@ tr {
   height: 30px;
 }
 td {
-  border-top: 1px solid #ccc9c9;
+  border-top: 1px solid #23316c;
   padding: 0 10%;
 }
 th {
-  background-color:#ccc9c9;
+  background-color:#23316c;
   padding: 0 10%;
 }
 .next {
@@ -75,35 +95,39 @@ th {
 .next-text2 {
   color: #e5e5e5;
   text-align: left;
-
 }
-.next-main {
-}
-
 .next-button {
   margin: 40px 0;
 }
 .btn {
   cursor: pointer;
-  color: #fff;
-  background-color: #fd8513;
+  color: #fffefc;
+  background-color: #fb8d00;
   border-radius: 8px;
+  border: 1px solid transparent;
+  box-shadow: 0 2px 0 #a94311;
 }
 
 @media only screen and (max-width: 320px) {
   .container {
     min-width: 320px;
   }
-  .img-car {
-    width: 180px;
-  }
   .test-text, .next-text1, .next-text2 {
     font-size: 15px;
+  }
+  td, th {
+    font-size: 15px;
+  }
+  .test-table {
+    width: 90%;
   }
   .test-caption, .next-caption {
     font-size: 35px;
   }
   .img-laptop {
+    width: 200px;
+  }
+  .img-car {
     width: 250px;
   }
   .btn {
@@ -113,17 +137,26 @@ th {
 }
 
 @media only screen and (min-width: 321px) and (max-width: 568px) {
-  .img-laptop {
-    width: 250px;
+  .container {
+    width: Calc(100%-30px);
+  }
+  .test-text, .next-text1, .next-text2 {
+    font-size: 15px;
+  }
+  td, th {
+    font-size: 15px;
+  }
+  .test-table {
+    width: 80%;
   }
   .test-caption, .next-caption {
     font-size: 45px;
   }
-  .img-car {
-    width: 210px;
+  .img-laptop {
+    width: 250px;
   }
-  .test-text, .next-text1, .next-text2 {
-    font-size: 15px;
+  .img-car {
+    width: 250px;
   }
   .btn {
     padding: 10px 30px;
@@ -136,9 +169,6 @@ th {
   .container {
     width: Calc(100%-30px);
   }
-  header {
-    margin-top: 30px;
-  }
   .test-text, .next-text1, .next-text2 {
     font-size: 16px;
   }
@@ -148,29 +178,26 @@ th {
   .test-table {
     width: 80%;
   }
+  .test-caption, .next-caption {
+    font-size: 47px;
+  }
   .img-laptop {
     float: left;
     padding: 3px 20px 10px 20px;
     width: 250px;
     height:100px;
   }
-  .test-caption, .next-caption {
-    font-size: 47px;
-  }
   .img-car {
-    width: 220px;
+    width: 350px;
   }
   .btn {
     padding: 10px 50px;
     font-size: 22px;
   }
 }
-@media only screen and (min-width: 769px) and (max-width: 1780px) {
+@media only screen and (min-width: 769px) {
   .container {
     width:70%;
-  }
-  header {
-    margin-top: 40px;
   }
   .test-text, .next-text1, .next-text2 {
     font-size: 18px;
@@ -179,7 +206,10 @@ th {
     font-size: 18px;
   }
   .test-table {
-    width: 60%;
+    width: 70%;
+  }
+  .test-caption, .next-caption {
+    font-size: 50px;
   }
   .img-laptop {
     float: left;
@@ -187,18 +217,11 @@ th {
     width: 250px;
     height:100px;
   }
-  .test-caption, .next-caption {
-    font-size: 50px;
-  }
   .img-car {
-    width: 225px;
+    width: 400px;
   }
   .btn {
     padding: 10px 50px;
     font-size: 22px;
   }
-
 }
-/*1024
-768
-480*/
